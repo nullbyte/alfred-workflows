@@ -1,4 +1,4 @@
 # TODO list
 
 - [ ] Provide README.
-- [ ] Improve URL recognition.
+- [x] Improve URL recognition.
