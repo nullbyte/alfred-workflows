@@ -2,7 +2,11 @@
 # If an argument is passed to the workflow it is
 # treated as an URL or as a search term for a Google search.
 on run argv
-	set theQuery to item 1 of argv
+    if argv is not equal to {} then
+		set theQuery to item 1 of argv
+	else
+		set theQuery to ""
+	end if
 	tell application "Google Chrome"
 		make new window
 		activate
